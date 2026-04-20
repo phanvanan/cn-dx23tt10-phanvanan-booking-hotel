@@ -32,3 +32,5 @@
 
 - Xây dựng trang đăng ký, đăng nhập người dùng
 - Xây dựng trang chủ hiển thị danh sách khách sạn
+
+<!-- Edit: Init week-01 report outline -->
