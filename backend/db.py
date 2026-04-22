@@ -430,3 +430,5 @@ def get_db_connection():
 def release_db_connection(conn):
     if connection_pool and conn:
         connection_pool.putconn(conn)
+
+# Edit: Add database connection pool documentation
