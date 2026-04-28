@@ -34,3 +34,4 @@
 - Xây dựng trang chủ hiển thị danh sách khách sạn
 
 <!-- Edit: Init week-01 report outline -->
+<!-- Edit: Update week-01 progress challenges -->
