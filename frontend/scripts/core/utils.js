@@ -78,3 +78,5 @@ const Utils = {
         });
     }
 };
+
+// Edit: Add comment for currency formatting in utils
