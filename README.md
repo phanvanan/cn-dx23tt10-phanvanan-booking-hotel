@@ -190,3 +190,5 @@ Hệ thống sử dụng **PostgreSQL** với các bảng chính:
 | Lớp | DX23TT10 |
 | Email | anpv090398@sv-onuni.edu.vn |
 | GitHub | [phanvanan](https://github.com/phanvanan) |
+
+<!-- Edit: Improve project overview in README -->
