@@ -31,3 +31,5 @@
 
 - Xây dựng trang chi tiết phòng khách sạn: hình ảnh, mô tả, đánh giá
 - Xây dựng luồng đặt phòng và thanh toán
+
+<!-- Edit: Update week-02 report with frontend layout notes -->
