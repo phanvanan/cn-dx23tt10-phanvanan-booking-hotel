@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách khách sạn | AnPV</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+    
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/components.css">
+    <link rel="stylesheet" href="../../styles/pages/hotel-list.css">
+</head>
+<body>
+    
+    <div id="navbar-component"></div>
+
+    
+    
+    <div id="search-component" data-compact="true"></div>
+
+    
+    <div class="breadcrumb-container">
+        <div class="container">
+            <a href="../home/index.html">Trang chủ</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Việt Nam</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Khách sạn tại Hà Nội</span>
+        </div>
+    </div>
+
+    
+    <main class="container d-flex list-layout">
+        
+        <aside class="sidebar-filter">
+            
+            <div class="map-view-box">
+                <img src="../../assets/images/hotel_1.png" alt="Map">
+                <button class="btn-view-map"><i class="fa-solid fa-map-location-dot"></i> Bản đồ</button>
+            </div>
+
+            
+            <div class="filter-box">
+                <h3 class="filter-title">Giá mỗi đêm</h3>
+                <div class="price-slider">
+                    <div class="price-range-inputs d-flex justify-between align-center">
+                        <input type="number" placeholder="VND 0" class="input-price" readonly>
+                        <span>-</span>
+                        <input type="number" placeholder="VND 10.000.000+" class="input-price" readonly>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="filter-box">
+                <h3 class="filter-title">Hạng sao</h3>
+                <div class="filter-options">
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </label>
+                </div>
+            </div>
+
+            
+            <div class="filter-box">
+                <h3 class="filter-title">Tiện nghi</h3>
+                <div class="filter-options">
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <span class="label-text">Hồ bơi</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <span class="label-text">Bữa sáng miễn phí</span>
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        
+        <section class="result-content flex-1">
+            <h1 class="result-title">Khách sạn tại Hà Nội</h1>
+            <p class="result-subtitle">Tìm thấy 1,245 chỗ nghỉ</p>
+
+            
+            <div class="sort-bar d-flex align-center">
+                <div class="sort-item active">Nổi bật nhất</div>
+                <div class="sort-item">Giá: Thấp đến Cao</div>
+                <div class="sort-item">Giá: Cao đến Thấp</div>
+                <div class="sort-item">Đánh giá cao nhất</div>
+            </div>
+
+            
+            <div class="hotel-list-container" id="hotel-list-container">
+                
+            </div>
+            
+            <div class="pagination d-flex justify-center" id="pagination-container"></div>
+        </section>
+    </main>
+
+    
+    
+    <div id="footer-component"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/vn.js"></script>
+    <script src="../../scripts/components/navbar.js"></script>
+    <script src="../../scripts/components/footer.js"></script>
+    <script src="../../scripts/components/searchBar.js"></script>
+    <script src="../../scripts/pages/hotel-list.js"></script>
+</body>
+</html>
