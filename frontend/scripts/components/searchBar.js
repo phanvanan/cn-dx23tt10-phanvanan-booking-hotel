@@ -280,3 +280,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// Edit: Add comment on Flatpickr date ranges
