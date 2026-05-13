@@ -31,3 +31,5 @@
 - Xây dựng trang xác nhận đặt phòng
 - Xây dựng tính năng mã giảm giá (coupon)
 - Xây dựng trang lịch sử đặt phòng cho người dùng
+
+<!-- Edit: Document timezone issues in week-03 report -->
