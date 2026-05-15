@@ -26,3 +26,5 @@ const ApiService = {
         return this.fetchWithHandler(`/locations/autocomplete?q=${keyword}`);
     }
 };
+
+// Edit: Document API error handling logic
