@@ -45,3 +45,5 @@ document.addEventListener("DOMContentLoaded", () => {
         </footer>
     `;
 });
+
+// Edit: Add comments for social links in footer
