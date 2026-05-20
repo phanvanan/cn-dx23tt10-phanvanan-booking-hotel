@@ -31,3 +31,5 @@
 - Xây dựng trang quản trị (admin): quản lý phòng, đơn đặt phòng, khách hàng
 - Xây dựng trang cẩm nang du lịch (`guides`)
 - Hoàn thiện giao diện toàn bộ các trang
+
+<!-- Edit: Document coupon logic in week-04 report -->
