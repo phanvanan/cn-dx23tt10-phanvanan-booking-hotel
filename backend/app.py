@@ -1465,3 +1465,4 @@ if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5600, debug=True)
 
 # Edit: Document backend CORS and static file serving
+# Edit: Document password hashing and registration API
