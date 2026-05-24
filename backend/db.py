@@ -432,3 +432,4 @@ def release_db_connection(conn):
         connection_pool.putconn(conn)
 
 # Edit: Add database connection pool documentation
+# Edit: Add comments on database seeding logic
