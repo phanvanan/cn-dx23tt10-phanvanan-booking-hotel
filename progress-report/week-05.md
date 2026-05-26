@@ -29,3 +29,5 @@
 ## Tổng kết
 
 Hệ thống đặt phòng khách sạn đã hoàn thành đầy đủ các chức năng theo yêu cầu đề tài: đăng ký, đăng nhập, tìm kiếm phòng, đặt phòng, thanh toán, áp mã giảm giá, xem lịch sử và quản trị. Viết tài liệu báo cáo và chuẩn bị demo.
+
+<!-- Edit: Update week-05 report draft -->
