@@ -192,3 +192,4 @@ Hệ thống sử dụng **PostgreSQL** với các bảng chính:
 | GitHub | [phanvanan](https://github.com/phanvanan) |
 
 <!-- Edit: Improve project overview in README -->
+<!-- Edit: Document database tables in README -->
