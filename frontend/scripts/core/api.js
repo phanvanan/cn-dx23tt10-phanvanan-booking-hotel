@@ -1,4 +1,4 @@
-
+// API Client service for communicating with Flask Backend
 const API_BASE_URL = "http://localhost:5000/api";
 
 const ApiService = {
