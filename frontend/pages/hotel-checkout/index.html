@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán | AnPV</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/components.css">
+    <link rel="stylesheet" href="../../styles/pages/hotel-checkout.css">
+</head>
+<body>
+    
+    <div id="navbar-component"></div>
+
+    <main class="checkout-main bg-light">
+        <div class="container d-flex">
+            
+            <div class="checkout-content flex-2">
+                
+                
+                <section class="checkout-card">
+                    <h2 class="card-title"><i class="fa-solid fa-user-check"></i> Thông tin liên hệ</h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Họ và Tên</label>
+                            <input type="text" id="guest-name" placeholder="Ví dụ: Nguyen Van A">
+                        </div>
+                        <div class="form-group">
+                            <label>Số điện thoại</label>
+                            <input type="tel" id="guest-phone" placeholder="Ví dụ: 0901234567">
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Email (Nhận xác nhận đặt phòng)</label>
+                            <input type="email" id="guest-email" placeholder="Ví dụ: email@domain.com">
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section class="checkout-card">
+                    <h2 class="card-title"><i class="fa-solid fa-bell-concierge"></i> Yêu cầu đặc biệt (Không bắt buộc)</h2>
+                    <p class="card-subtitle">Các yêu cầu tùy thuộc vào khả năng cung cấp của khách sạn.</p>
+                    <div class="checkbox-group d-flex flex-wrap" id="special-requests-container">
+                        
+                    </div>
+                </section>
+
+                
+                <section class="checkout-card">
+                    <h2 class="card-title"><i class="fa-solid fa-credit-card"></i> Phương thức thanh toán</h2>
+                    <div class="payment-methods" id="payment-methods-container">
+                        
+                    </div>
+                </section>
+
+            </div>
+
+            
+            <aside class="checkout-sidebar flex-1">
+                <div class="summary-card sticky-sidebar" id="booking-summary-container">
+                    
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    
+    <div id="footer-component"></div>
+
+    
+    <script src="../../scripts/core/utils.js"></script>
+    <script src="../../scripts/components/navbar.js"></script>
+    <script src="../../scripts/components/footer.js"></script>
+    <script src="../../scripts/pages/hotel-checkout.js"></script>
+</body>
+</html>

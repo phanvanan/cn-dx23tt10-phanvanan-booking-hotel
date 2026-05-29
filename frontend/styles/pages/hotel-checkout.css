@@ -1,0 +1,281 @@
+
+.checkout-main {
+    padding: 10px 0;
+}
+
+.checkout-main .container {
+    gap: 10px;
+    align-items: flex-start;
+}
+
+
+.checkout-card, .summary-card {
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card-title {
+    font-size: var(--fs-lg);
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-dark);
+}
+
+.card-title i {
+    color: var(--primary-blue);
+}
+
+.card-subtitle {
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+.form-group label {
+    display: block;
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: var(--fs-md);
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+}
+
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    accent-color: var(--primary-blue);
+}
+
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.payment-option:hover {
+    background-color: var(--bg-light);
+}
+
+.payment-option.active {
+    border-color: var(--primary-blue);
+    background-color: rgba(43, 99, 235, 0.05);
+}
+
+.payment-option input[type="radio"] {
+    accent-color: var(--primary-blue);
+    width: 16px;
+    height: 16px;
+}
+
+.payment-icon {
+    font-size: var(--fs-2xl);
+    color: var(--text-dark);
+}
+
+
+.summary-hotel-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    margin-bottom: 10px;
+}
+
+.summary-hotel-name {
+    font-size: var(--fs-md);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.summary-room-name {
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.summary-dates {
+    background: var(--bg-light);
+    padding: 10px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.summary-dates .date-box p {
+    font-size: var(--fs-xs);
+    color: var(--text-muted);
+    margin-bottom: 2px;
+}
+
+.summary-dates .date-box span {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+}
+
+.price-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+
+.price-total span {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.price-total .amount {
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    color: #ff5e1f;
+}
+
+.btn-checkout {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5e1f;
+    color: var(--white);
+    font-size: var(--fs-md);
+    font-weight: 600;
+    border: none;
+    border-radius: var(--radius-sm);
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-checkout:hover {
+    background-color: #d11f1f;
+}
+
+/* Coupon & Promo Styling (DRY & Clean) */
+.price-row-discount {
+    color: #2ec4b6 !important;
+    font-weight: 500;
+}
+
+.promo-box {
+    margin-top: 10px;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 10px;
+}
+
+.coupon-input {
+    padding: 6px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: var(--fs-md);
+    text-transform: uppercase;
+}
+
+.btn-apply-coupon {
+    padding: 6px 10px;
+    font-size: var(--fs-md);
+    border-radius: 4px;
+}
+
+.coupon-message {
+    margin-top: 5px;
+    display: none;
+}
+
+.coupon-message.show {
+    display: block;
+}
+
+.coupon-message.error {
+    color: var(--danger-color);
+}
+
+.coupon-message.success {
+    color: #008a62;
+}
+
+
+@media (max-width: 992px) {
+    .checkout-main .container {
+        flex-direction: column !important;
+        gap: 15px;
+    }
+    
+    .checkout-content {
+        width: 100%;
+    }
+    
+    .checkout-sidebar {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+    
+    .checkbox-item {
+        width: 100%;
+    }
+}

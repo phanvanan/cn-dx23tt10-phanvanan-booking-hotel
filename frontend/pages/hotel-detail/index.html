@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết Khách sạn | AnPV</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+    
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/components.css">
+    <link rel="stylesheet" href="../../styles/pages/hotel-detail.css">
+</head>
+<body>
+    
+    
+    <div id="navbar-component"></div>
+
+    
+    <div class="breadcrumb-container">
+        <div class="container d-flex align-center">
+            <a href="../home/index.html">Trang chủ</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="../hotel-list/index.html">Khách sạn tại Hà Nội</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Lotte Hotel Hanoi</span>
+        </div>
+    </div>
+
+    
+    <section class="hotel-header-section">
+        <div class="container">
+            <div class="hotel-title-row">
+                <div>
+                    <h1 class="hotel-title">Lotte Hotel Hanoi <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></h1>
+                    <p class="hotel-address"><i class="fa-solid fa-location-dot"></i> 54 Liễu Giai, Cống Vị, Ba Đình, Hà Nội</p>
+                </div>
+            </div>
+
+            
+            <div id="hotel-gallery-container" class="hotel-gallery"></div>
+        </div>
+    </section>
+
+    
+    <div class="room-filter-sticky">
+        <div class="container">
+            <div id="search-component" data-compact="true"></div>
+        </div>
+    </div>
+
+    
+    <section class="room-list-section container">
+        <div class="room-table-container">
+            <div class="room-table-header">
+                <div>Loại phòng</div>
+                <div>Tùy chọn & Tiện ích</div>
+                <div class="text-center">Sức chứa</div>
+                <div class="text-right">Giá mỗi đêm</div>
+            </div>
+            
+            <div id="room-list-container"></div>
+        </div>
+    </section>
+
+    
+    <section class="reviews-section container">
+        <h2 class="section-sub-title">Đánh giá từ khách hàng</h2>
+        <div id="reviews-container"></div>
+        
+        
+        <div class="add-review-box">
+            <h3 class="add-review-title">Viết đánh giá của bạn</h3>
+            <form id="add-review-form" class="review-form">
+                <div class="form-row">
+                    <div class="form-group flex-1">
+                        <label for="review-user-name">Họ và tên</label>
+                        <input type="text" id="review-user-name" placeholder="Nhập họ và tên..." required>
+                    </div>
+                    <div class="form-group flex-1">
+                        <label for="review-user-email">Email</label>
+                        <input type="email" id="review-user-email" placeholder="Nhập địa chỉ email..." required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Điểm số đánh giá (Sao)</label>
+                    <div class="star-rating-widget" id="star-rating-widget">
+                        <i class="fa-regular fa-star star-btn" data-value="1"></i>
+                        <i class="fa-regular fa-star star-btn" data-value="2"></i>
+                        <i class="fa-regular fa-star star-btn" data-value="3"></i>
+                        <i class="fa-regular fa-star star-btn" data-value="4"></i>
+                        <i class="fa-regular fa-star star-btn" data-value="5"></i>
+                    </div>
+                    <input type="hidden" id="review-rating-value" value="" required>
+                </div>
+                <div class="form-group">
+                    <label for="review-content">Nội dung nhận xét</label>
+                    <textarea id="review-content" rows="4" placeholder="Nhập cảm nhận của bạn về khách sạn..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit-review">Gửi đánh giá</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close" id="lightbox-close-btn">&times;</span>
+        <button class="lightbox-btn lightbox-prev" id="lightbox-prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Zoomed View">
+        <button class="lightbox-btn lightbox-next" id="lightbox-next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    
+    
+    <div id="footer-component"></div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/vn.js"></script>
+    <script src="../../scripts/components/searchBar.js"></script>
+    <script src="../../scripts/pages/hotel-detail.js"></script>
+    
+    <script src="../../scripts/components/navbar.js"></script>
+    <script src="../../scripts/components/footer.js"></script>
+</body>
+</html>

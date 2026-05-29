@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cẩm nang du lịch & Kinh nghiệm đặt phòng | AnPV</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="../../styles/global.css?v=1.3">
+    <link rel="stylesheet" href="../../styles/components.css?v=1.3">
+    <link rel="stylesheet" href="../../styles/pages/guides.css?v=1.3">
+</head>
+<body>
+    
+    <div id="navbar-component"></div>
+
+    
+    <section class="guides-hero-banner">
+        <div class="container relative hero-content-box">
+            <span class="hero-tag">XU HƯỚNG DU LỊCH 2026</span>
+            <h1 class="hero-title">Khám Phá Việt Nam Cùng AnPV</h1>
+            <p class="hero-desc">Tổng hợp các kinh nghiệm du lịch tự túc, hướng dẫn ẩm thực đặc sắc và những mẹo săn phòng giá rẻ không thể bỏ qua.</p>
+            <div class="search-guide-box d-flex">
+                <input type="text" id="search-guide-input" placeholder="Tìm kiếm điểm đến hoặc bài viết...">
+                <button id="btn-search-guide"><i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="guides-main bg-light">
+        <div class="container">
+            
+            <div class="guides-filter-tabs d-flex justify-center gap-10">
+                <button class="guide-tab active" data-category="all">Tất cả bài viết</button>
+                <button class="guide-tab" data-category="explore">Kinh nghiệm khám phá</button>
+                <button class="guide-tab" data-category="food">Ẩm thực & Mua sắm</button>
+                <button class="guide-tab" data-category="tips">Mẹo đặt phòng</button>
+            </div>
+
+            
+            <div class="guides-grid" id="guides-container">
+                
+            </div>
+        </div>
+    </main>
+
+    
+    <div id="footer-component"></div>
+
+    
+    <script src="../../scripts/components/navbar.js?v=1.3"></script>
+    <script src="../../scripts/components/footer.js?v=1.3"></script>
+    <script src="../../scripts/pages/guides.js?v=1.3"></script>
+</body>
+</html>

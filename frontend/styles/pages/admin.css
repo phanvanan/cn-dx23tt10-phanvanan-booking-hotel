@@ -1,0 +1,849 @@
+
+
+:root {
+    --sidebar-width: 230px;
+    --sidebar-bg: #0f294d;
+    --admin-bg-light: #f5f7fa;
+}
+
+body {
+    background-color: var(--admin-bg-light);
+}
+
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.admin-sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--sidebar-bg);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.sidebar-header {
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.admin-logo {
+    font-size: var(--fs-2xl);
+    font-weight: 800;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.admin-logo span {
+    color: var(--secondary-orange);
+    font-size: var(--fs-sm);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sidebar-nav {
+    flex: 1;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nav-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 15px;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    transition: all 0.2s;
+    border-left: 3px solid transparent;
+}
+
+.nav-menu-item:hover, .nav-menu-item.active {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--white);
+    border-left-color: var(--primary-blue);
+}
+
+.sidebar-footer {
+    padding: 10px 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#admin-btn-logout {
+    width: 100%;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 6px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+#admin-btn-logout:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+}
+
+
+.admin-content {
+    margin-left: var(--sidebar-width);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.admin-header {
+    background-color: var(--white);
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.admin-view-title {
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.btn-back-home {
+    font-size: var(--fs-xs);
+    color: var(--primary-blue);
+    background-color: var(--light-blue);
+    text-decoration: none;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-back-home:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.admin-avatar-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--fs-sm);
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.admin-avatar-box i {
+    font-size: var(--fs-xl);
+    color: var(--text-muted);
+}
+
+.admin-view-container {
+    padding: 12px;
+    flex: 1;
+}
+
+
+.kpi-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 992px) {
+    .kpi-metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.kpi-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    padding: 10px; 
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.kpi-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-xl);
+}
+
+.icon-revenue { background-color: #e6f6f0; color: #008a62; }
+.icon-bookings { background-color: var(--light-blue); color: var(--primary-blue); }
+.icon-hotels { background-color: #fff9db; color: #f59f00; }
+.icon-users { background-color: #f3f0ff; color: #845ef7; }
+
+.kpi-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.kpi-label {
+    font-size: var(--fs-xxs);
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.kpi-value {
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+
+.dashboard-charts-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .dashboard-charts-row {
+        flex-direction: column;
+    }
+}
+
+.chart-box, .popular-hotels-box {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+}
+
+.popular-hotels-box {
+    width: 280px;
+}
+
+@media (max-width: 768px) {
+    .popular-hotels-box {
+        width: 100%;
+    }
+}
+
+.chart-title {
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+
+.bar-chart-mock {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 120px;
+    padding-top: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.chart-bar-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; 
+    gap: 4px;
+    width: 40px;
+    height: 100%; 
+}
+
+.bar-fill {
+    width: 15px;
+    background-color: var(--light-blue);
+    border-radius: 3px 3px 0 0;
+    transition: all 0.3s;
+}
+
+.bar-fill:hover, .bar-fill.active {
+    background-color: var(--primary-blue);
+}
+
+.chart-bar-col span {
+    font-size: var(--fs-xxs);
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+
+.popular-hotels-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.popular-hotel-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 6px;
+}
+
+.popular-hotel-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.hotel-rank {
+    font-size: var(--fs-sm);
+    font-weight: 700;
+    color: var(--text-muted);
+    width: 15px;
+    flex-shrink: 0;
+}
+
+.popular-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: var(--radius-xs);
+    flex-shrink: 0;
+}
+
+.popular-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+    min-width: 0;
+}
+
+.popular-name {
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    color: var(--text-dark);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: auto;
+    line-height: 1.3;
+}
+
+.popular-price {
+    font-size: var(--fs-xxs);
+    color: #ff5e1f;
+    font-weight: 700;
+}
+
+
+.recent-table-box {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+}
+
+.btn-view-all {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--primary-blue);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-view-all:hover {
+    background-color: var(--light-blue);
+    border-color: var(--primary-blue);
+}
+
+
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.admin-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: var(--fs-sm);
+}
+
+.admin-data-table th, .admin-data-table td {
+    padding: 8px 10px; 
+    border-bottom: 1px solid var(--border-color);
+}
+
+.admin-data-table th {
+    background-color: var(--light-blue);
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.admin-data-table tbody tr:hover {
+    background-color: #fafbfc;
+}
+
+
+.booking-status-badge {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.user-role-badge {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
+
+.admin-role { background-color: #f3f0ff; color: #845ef7; }
+.client-role { background-color: #e3fafc; color: #0c8599; }
+
+.room-status-badge {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+}
+.room-status-badge.empty { background-color: #e6f6f0; color: #008a62; }
+.room-status-badge.busy { background-color: #fef2f2; color: var(--danger-color); }
+
+/* Nút trong bảng: Sửa (Edit Hotel/Room/User/Guide/Coupon) */
+.btn-edit-hotel,
+.btn-edit-room,
+.btn-edit-user,
+.btn-edit-guide,
+.btn-edit-coupon {
+    background-color: #fffbeb !important;
+    color: #d97706 !important;
+    border: none !important;
+    padding: 6px 12px !important;
+    border-radius: 6px !important;
+    cursor: pointer;
+    font-size: var(--fs-sm) !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-edit-hotel:hover,
+.btn-edit-room:hover,
+.btn-edit-user:hover,
+.btn-edit-guide:hover,
+.btn-edit-coupon:hover {
+    background-color: #fef3c7 !important;
+}
+
+/* Nút trong bảng: Xóa (Delete Hotel/Room/User/Guide/Coupon/Review) */
+.btn-delete-hotel,
+.btn-delete-room,
+.btn-delete-user,
+.btn-delete-guide,
+.btn-delete-coupon,
+.btn-delete-review {
+    background-color: #fef2f2 !important;
+    color: var(--danger-color) !important;
+    border: none !important;
+    padding: 6px 12px !important;
+    border-radius: 6px !important;
+    cursor: pointer;
+    font-size: var(--fs-sm) !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-delete-hotel:hover,
+.btn-delete-room:hover,
+.btn-delete-user:hover,
+.btn-delete-guide:hover,
+.btn-delete-coupon:hover,
+.btn-delete-review:hover {
+    background-color: #fee2e2 !important;
+}
+
+/* Nút trong bảng: Quản lý phòng */
+.btn-rooms-hotel {
+    background-color: #e6fffa !important;
+    color: #0d9488 !important;
+    border: none !important;
+    padding: 6px 12px !important;
+    border-radius: 6px !important;
+    cursor: pointer;
+    font-size: var(--fs-sm) !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-rooms-hotel:hover {
+    background-color: #b2f5ea !important;
+}
+
+/* Nút đơn đặt phòng: Hủy đơn & Duyệt lại */
+.btn-cancel-admin {
+    background-color: #fef2f2 !important;
+    color: var(--danger-color) !important;
+    border: none !important;
+    padding: 6px 12px !important;
+    border-radius: 6px !important;
+    font-size: var(--fs-sm) !important;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-cancel-admin:hover {
+    background-color: #fee2e2 !important;
+}
+
+.btn-confirm-admin {
+    background-color: #e6f6f0 !important;
+    color: #008a62 !important;
+    border: none !important;
+    padding: 6px 12px !important;
+    border-radius: 6px !important;
+    font-size: var(--fs-sm) !important;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-confirm-admin:hover {
+    background-color: #d1f2e5 !important;
+}
+
+.btn-confirm-admin.btn-reconfirm {
+    background-color: var(--secondary-orange) !important;
+    color: #fff !important;
+}
+
+.btn-confirm-admin.btn-reconfirm:hover {
+    background-color: #e68600 !important;
+}
+
+/* Hiệu ứng active (tactile feedback) cho mọi nút bấm trong trang quản trị */
+.btn-edit-hotel:active,
+.btn-edit-room:active,
+.btn-edit-user:active,
+.btn-edit-guide:active,
+.btn-edit-coupon:active,
+.btn-delete-hotel:active,
+.btn-delete-room:active,
+.btn-delete-user:active,
+.btn-delete-guide:active,
+.btn-delete-coupon:active,
+.btn-delete-review:active,
+.btn-rooms-hotel:active,
+.btn-cancel-admin:active,
+.btn-confirm-admin:active,
+.admin-btn-primary:active,
+.admin-btn-cancel:active,
+.admin-btn-submit:active,
+.btn-view-all:active,
+.btn-back-home:active {
+    transform: scale(0.95) !important;
+}
+
+/* Nút lớn thêm mới (Add new buttons) */
+.admin-btn-primary {
+    background-color: var(--primary-blue);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.admin-btn-primary:hover {
+    background-color: #2451d6;
+}
+
+/* Bộ lọc Select đầu bảng */
+.admin-select-input {
+    padding: 6px 32px 6px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: var(--fs-sm);
+    outline: none;
+    background-color: var(--white);
+    color: var(--text-dark);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238592a6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 14px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.admin-select-input:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(50, 100, 255, 0.15);
+}
+
+/* Modern Admin Modals & Overlay */
+.admin-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 41, 77, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 2500;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.admin-modal-card {
+    background: #fff;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+.admin-modal-card-lg {
+    max-width: 800px;
+    width: 95%;
+}
+
+.admin-modal-card-xl {
+    max-width: 1100px;
+    width: 95%;
+}
+
+.admin-modal-overlay.show .admin-modal-card {
+    transform: translateY(0);
+}
+
+.admin-modal-header {
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.admin-modal-title {
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.admin-modal-close-btn {
+    background: none;
+    border: none;
+    font-size: var(--fs-xl);
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+.admin-modal-close-btn:hover {
+    color: var(--primary-blue);
+}
+
+.admin-form-group {
+    margin-bottom: 12px;
+}
+
+.admin-form-label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* Modern inputs & textareas & selects */
+.admin-form-input,
+.admin-form-textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: var(--fs-md);
+    background-color: var(--white);
+    color: var(--text-dark);
+    transition: all 0.2s ease;
+}
+
+.admin-form-input:focus,
+.admin-form-textarea:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(50, 100, 255, 0.15);
+    outline: none;
+}
+
+.admin-form-textarea {
+    font-family: inherit;
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Custom dropdown arrows for selects inside modals */
+select.admin-form-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238592a6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 32px;
+    cursor: pointer;
+}
+
+/* Modal Footer Buttons */
+.admin-modal-footer {
+    margin-top: 10px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 10px;
+}
+
+.admin-btn-cancel {
+    background-color: var(--bg-light) !important;
+    border: 1px solid var(--border-color) !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    font-size: var(--fs-sm) !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    color: var(--text-dark) !important;
+    transition: all 0.2s ease !important;
+    outline: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.admin-btn-cancel:hover {
+    background-color: var(--border-color) !important;
+}
+
+.admin-btn-submit {
+    background-color: var(--primary-blue) !important;
+    color: var(--white) !important;
+    border: none !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    font-size: var(--fs-sm) !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    outline: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.admin-btn-submit:hover {
+    background-color: #2451d6 !important;
+}
+
+/* Helper classes & styles cho bảng khách sạn trong admin */
+.hotel-table-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.text-orange-bold {
+    color: #ff5e1f;
+    font-weight: 700;
+}
+
+.icon-orange-star {
+    color: #ff9500;
+}
+
+.guide-table-img {
+    width: 60px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Custom Tooltip cho Biểu đồ Thống kê */
+.chart-tooltip {
+    position: absolute;
+    background-color: rgba(15, 41, 77, 0.95) !important;
+    color: var(--white) !important;
+    padding: 6px 10px !important;
+    border-radius: 6px !important;
+    font-size: var(--fs-xs) !important;
+    line-height: 1.4 !important;
+    pointer-events: none !important;
+    z-index: 3000 !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.15s ease, visibility 0.15s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    white-space: nowrap;
+}
+
+.chart-tooltip.show {
+    opacity: 1;
+    visibility: visible;
+}

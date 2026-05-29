@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang quản trị hệ thống | AnPV Admin</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="../../styles/global.css?v=1.4">
+    <link rel="stylesheet" href="../../styles/pages/admin.css?v=1.4">
+</head>
+<body>
+    <div class="admin-layout">
+        
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <a href="../home/index.html" class="admin-logo">AnPV <span>Admin</span></a>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-menu-item active" data-view="dashboard">
+                    <i class="fa-solid fa-chart-pie"></i> Tổng quan
+                </a>
+                <a href="#" class="nav-menu-item" data-view="hotels">
+                    <i class="fa-solid fa-hotel"></i> Quản lý khách sạn
+                </a>
+                <a href="#" class="nav-menu-item" data-view="bookings">
+                    <i class="fa-solid fa-file-invoice-dollar"></i> Quản lý đơn hàng
+                </a>
+                <a href="#" class="nav-menu-item" data-view="users">
+                    <i class="fa-solid fa-users"></i> Quản lý người dùng
+                </a>
+                <a href="#" class="nav-menu-item" data-view="guides">
+                    <i class="fa-solid fa-newspaper"></i> Quản lý bài đăng
+                </a>
+                <a href="#" class="nav-menu-item" data-view="coupons">
+                    <i class="fa-solid fa-ticket"></i> Quản lý ưu đãi
+                </a>
+                <a href="#" class="nav-menu-item" data-view="reviews">
+                    <i class="fa-solid fa-star"></i> Quản lý đánh giá
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="admin-btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</button>
+            </div>
+        </aside>
+
+        
+        <main class="admin-content">
+            
+            <header class="admin-header d-flex justify-between align-center">
+                <h1 class="admin-view-title" id="page-title">Tổng quan hệ thống</h1>
+                <div class="admin-user-profile d-flex align-center gap-10">
+                    <a href="../home/index.html" class="btn-back-home"><i class="fa-solid fa-house"></i> Về trang chủ</a>
+                    <div class="admin-avatar-box">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span id="admin-name">Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="admin-view-container">
+                
+                <section id="view-dashboard" class="admin-view-section">
+                    
+                    <div class="kpi-metrics-grid">
+                        <div class="kpi-card">
+                            <div class="kpi-icon icon-revenue"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                            <div class="kpi-info">
+                                <span class="kpi-label">Tổng doanh thu</span>
+                                <h3 class="kpi-value" id="kpi-revenue">0 ₫</h3>
+                            </div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-icon icon-bookings"><i class="fa-solid fa-calendar-check"></i></div>
+                            <div class="kpi-info">
+                                <span class="kpi-label">Tổng đơn đặt phòng</span>
+                                <h3 class="kpi-value" id="kpi-bookings">0</h3>
+                            </div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-icon icon-hotels"><i class="fa-solid fa-hotel"></i></div>
+                            <div class="kpi-info">
+                                <span class="kpi-label">Khách sạn hoạt động</span>
+                                <h3 class="kpi-value" id="kpi-hotels">12</h3>
+                            </div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-icon icon-users"><i class="fa-solid fa-users"></i></div>
+                            <div class="kpi-info">
+                                <span class="kpi-label">Tổng số thành viên</span>
+                                <h3 class="kpi-value" id="kpi-users">1,540</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="dashboard-charts-row">
+                        
+                        <div class="chart-box flex-1">
+                            <h3 class="chart-title">Thống kê doanh thu 6 tháng qua</h3>
+                            <div class="bar-chart-mock">
+                                <div class="chart-bar-col">
+                                    <div class="bar-fill" style="height: 60%;"></div>
+                                    <span>T12</span>
+                                </div>
+                                <div class="chart-bar-col">
+                                    <div class="bar-fill" style="height: 75%;"></div>
+                                    <span>T1</span>
+                                </div>
+                                <div class="chart-bar-col">
+                                    <div class="bar-fill" style="height: 45%;"></div>
+                                    <span>T2</span>
+                                </div>
+                                <div class="chart-bar-col">
+                                    <div class="bar-fill" style="height: 90%;"></div>
+                                    <span>T3</span>
+                                </div>
+                                <div class="chart-bar-col">
+                                    <div class="bar-fill" style="height: 80%;"></div>
+                                    <span>T4</span>
+                                </div>
+                                <div class="chart-bar-col">
+                                    <div class="bar-fill active" style="height: 95%;"></div>
+                                    <span>T5 (Hiện tại)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="popular-hotels-box">
+                            <h3 class="chart-title">Khách sạn thịnh hành</h3>
+                            <div class="popular-hotels-list" id="popular-hotels-list">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="recent-table-box">
+                        <div class="box-header d-flex justify-between align-center">
+                            <h3 class="chart-title">Đơn đặt phòng gần đây</h3>
+                            <button class="btn-view-all" id="btn-goto-bookings">Xem tất cả</button>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="admin-data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Mã đơn</th>
+                                        <th>Khách hàng</th>
+                                        <th>Khách sạn</th>
+                                        <th>Ngày nhận/trả</th>
+                                        <th>Tổng tiền</th>
+                                        <th>Trạng thái</th>
+                                        <th>Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="recent-bookings-tbody">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section id="view-hotels" class="admin-view-section hidden">
+                    <div class="box-header d-flex justify-between align-center mb-10">
+                        <h3 class="chart-title">Danh sách khách sạn đang quản lý</h3>
+                        <button class="admin-btn-primary" id="btn-add-hotel-modal"><i class="fa-solid fa-plus"></i> Thêm khách sạn</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-data-table">
+                            <thead>
+                                <tr>
+                                    <th>Ảnh</th>
+                                    <th>Tên khách sạn</th>
+                                    <th>Hạng sao</th>
+                                    <th>Địa chỉ</th>
+                                    <th>Loại hình</th>
+                                    <th>Giá trung bình</th>
+                                    <th>Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="hotels-list-tbody">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                
+                <section id="view-bookings" class="admin-view-section hidden">
+                    <div class="box-header d-flex justify-between align-center mb-10">
+                        <h3 class="chart-title">Tất cả đơn đặt phòng</h3>
+                        <div class="filter-box-row d-flex gap-10">
+                            <select id="filter-booking-status" class="admin-select-input">
+                                <option value="all">Tất cả trạng thái</option>
+                                <option value="Đã xác nhận">Đã xác nhận</option>
+                                <option value="Đã hủy">Đã hủy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-data-table">
+                            <thead>
+                                <tr>
+                                    <th>Mã đơn</th>
+                                    <th>Tên khách hàng</th>
+                                    <th>Khách sạn</th>
+                                    <th>Ngày nhận/trả</th>
+                                    <th>Phương thức</th>
+                                    <th>Tổng tiền</th>
+                                    <th>Trạng thái</th>
+                                    <th>Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="all-bookings-tbody">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                
+                <section id="view-users" class="admin-view-section hidden">
+                    <div class="d-flex justify-between align-center mb-10">
+                        <h3 class="chart-title">Danh sách người dùng đăng ký</h3>
+                        <button class="admin-btn-primary" id="btn-add-user-modal">
+                            <i class="fa-solid fa-user-plus"></i> Thêm người dùng mới
+                        </button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tên khách hàng</th>
+                                    <th>Email đăng nhập</th>
+                                    <th>Vai trò</th>
+                                    <th>Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="users-list-tbody">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="view-guides" class="admin-view-section hidden">
+                    <div class="d-flex justify-between align-center mb-10">
+                        <h3 class="chart-title">Danh sách bài đăng cẩm nang</h3>
+                        <button class="admin-btn-primary" id="btn-add-guide-modal">
+                            <i class="fa-solid fa-plus"></i> Thêm bài viết mới
+                        </button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Ảnh đại diện</th>
+                                    <th>Tiêu đề bài viết</th>
+                                    <th>Danh mục</th>
+                                    <th>Tóm tắt nội dung</th>
+                                    <th>Ngày tạo</th>
+                                    <th>Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="guides-list-tbody">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="view-coupons" class="admin-view-section hidden">
+                    <div class="d-flex justify-between align-center mb-10">
+                        <h3 class="chart-title">Danh sách mã ưu đãi</h3>
+                        <button class="admin-btn-primary" id="btn-add-coupon-modal">
+                            <i class="fa-solid fa-ticket"></i> Thêm mã giảm giá
+                        </button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-data-table">
+                            <thead>
+                                <tr>
+                                    <th>Mã ưu đãi</th>
+                                    <th>Phần trăm giảm (%)</th>
+                                    <th>Chi tiêu tối thiểu (VND)</th>
+                                    <th>Mô tả</th>
+                                    <th>Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="coupons-list-tbody">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="view-reviews" class="admin-view-section hidden">
+                    <div class="d-flex justify-between align-center mb-10">
+                        <h3 class="chart-title">Danh sách đánh giá khách hàng</h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Khách sạn</th>
+                                    <th>Email khách</th>
+                                    <th>Tên khách</th>
+                                    <th>Điểm số</th>
+                                    <th>Nội dung đánh giá</th>
+                                    <th>Ngày đánh giá</th>
+                                    <th>Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody id="reviews-list-tbody">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    
+    <script src="../../scripts/core/utils.js?v=1.4"></script>
+    <script src="../../scripts/pages/admin.js?v=1.4"></script>
+</body>
+</html>
