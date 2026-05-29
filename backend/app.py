@@ -1,3 +1,4 @@
+# Flask Backend API for Hotel Booking System
 import os
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
