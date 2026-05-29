@@ -1,3 +1,4 @@
+<!-- Báo cáo tuần 4: Trang xác nhận đặt phòng, mã giảm giá, lịch sử đặt phòng -->
 # Báo cáo tiến độ - Tuần 4
 
 **Họ tên:** Phan Văn Ân  
