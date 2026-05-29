@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu giảm giá & Ưu đãi đặc biệt | AnPV</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="../../styles/global.css?v=1.2">
+    <link rel="stylesheet" href="../../styles/components.css?v=1.2">
+    <link rel="stylesheet" href="../../styles/pages/coupons.css?v=1.2">
+</head>
+<body>
+    
+    <div id="navbar-component"></div>
+
+    <main class="coupons-main bg-light">
+        <div class="container">
+            <div class="coupons-hero-banner">
+                <h1>Trung tâm Ưu đãi & Phiếu giảm giá AnPV</h1>
+                <p>Nhận các mã ưu đãi độc quyền từ AnPV để tiết kiệm chi phí đặt phòng tối đa</p>
+            </div>
+
+            
+            <div class="coupons-tabs d-flex justify-center gap-10">
+                <button class="coupon-tab active" data-category="all">Tất cả ưu đãi</button>
+                <button class="coupon-tab" data-category="hotel">Khách sạn hot</button>
+                <button class="coupon-tab" data-category="newuser">Khách hàng mới</button>
+                <button class="coupon-tab" data-category="partner">Ưu đãi đối tác</button>
+            </div>
+
+            
+            <div class="coupons-grid" id="coupons-container">
+                
+            </div>
+        </div>
+    </main>
+
+    
+    <div id="toast-message" class="toast-message hidden">
+        <i class="fa-solid fa-circle-check"></i> Đã sao chép mã giảm giá thành công!
+    </div>
+
+    
+    <div id="footer-component"></div>
+
+    
+    <script src="../../scripts/components/navbar.js?v=1.2"></script>
+    <script src="../../scripts/components/footer.js?v=1.2"></script>
+    <script src="../../scripts/pages/coupons.js?v=1.2"></script>
+</body>
+</html>
