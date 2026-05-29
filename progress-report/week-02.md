@@ -1,3 +1,4 @@
+<!-- Báo cáo tuần 2: Xây dựng trang chủ, đăng nhập, đăng ký -->
 # Báo cáo tiến độ - Tuần 2
 
 **Họ tên:** Phan Văn Ân  
