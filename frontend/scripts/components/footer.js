@@ -1,3 +1,4 @@
+// Footer component for inserting dynamic footer content
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("footer-component");
     if (!container) return;
