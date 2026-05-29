@@ -1,3 +1,4 @@
+<!-- Báo cáo tuần 1: Khởi động dự án -->
 # Báo cáo tiến độ - Tuần 1
 
 **Họ tên:** Phan Văn Ân  
