@@ -1,9 +1,10 @@
+<!-- Báo cáo tuần 2: Xây dựng trang chủ, đăng nhập, đăng ký -->
 # Báo cáo tiến độ - Tuần 2
 
 **Họ tên:** Phan Văn Ân  
 **MSSV:** 170123231  
 **Lớp:** DX23TT10  
-**Tuần:** 2 (từ ngày ... đến ngày ...)
+**Tuần:** 2 (từ ngày 07/05/2026 đến ngày 10/05/2026)
 
 ---
 

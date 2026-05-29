@@ -1,9 +1,10 @@
+<!-- Báo cáo tuần 3: Trang chi tiết khách sạn, tích hợp Flatpickr và đặt phòng -->
 # Báo cáo tiến độ - Tuần 3
 
 **Họ tên:** Phan Văn Ân  
 **MSSV:** 170123231  
 **Lớp:** DX23TT10  
-**Tuần:** 3 (từ ngày ... đến ngày ...)
+**Tuần:** 3 (từ ngày 11/05/2026 đến ngày 13/05/2026)
 
 ---
 

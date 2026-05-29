@@ -1,9 +1,10 @@
+<!-- Báo cáo tuần 4: Trang xác nhận đặt phòng, mã giảm giá, lịch sử đặt phòng -->
 # Báo cáo tiến độ - Tuần 4
 
 **Họ tên:** Phan Văn Ân  
 **MSSV:** 170123231  
 **Lớp:** DX23TT10  
-**Tuần:** 4 (từ ngày ... đến ngày ...)
+**Tuần:** 4 (từ ngày 14/05/2026 đến ngày 24/05/2026)
 
 ---
 

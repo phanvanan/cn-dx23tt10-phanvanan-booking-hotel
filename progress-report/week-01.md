@@ -1,10 +1,10 @@
+<!-- Báo cáo tuần 1: Khởi động dự án -->
 # Báo cáo tiến độ - Tuần 1
 
 **Họ tên:** Phan Văn Ân  
 **MSSV:** 170123231  
 **Lớp:** DX23TT10  
-**Tuần:** 1 (từ ngày ... đến ngày ...)
-
+**Tuần:** 1 (từ ngày 19/04/2026 đến ngày 06/05/2026)
 ---
 
 ## Công việc đã làm

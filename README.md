@@ -188,5 +188,5 @@ Hệ thống sử dụng **PostgreSQL** với các bảng chính:
 | Họ tên | Phan Văn Ân |
 | MSSV | 170123231 |
 | Lớp | DX23TT10 |
-| Email | *(email sinh viên)* |
+| Email | anpv090398@sv-onuni.edu.vn |
 | GitHub | [phanvanan](https://github.com/phanvanan) |

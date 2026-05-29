@@ -1,3 +1,4 @@
+// Search bar component to handle search filtering and date picker
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("search-component");
     
