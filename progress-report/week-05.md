@@ -9,25 +9,23 @@
 
 ## Công việc đã làm
 
-- Xây dựng trang admin: quản lý khách sạn (thêm, sửa, xoá), quản lý đặt phòng
-- Thêm quản lý coupon và bài viết hướng dẫn du lịch vào trang admin
-- Xây dựng trang hướng dẫn du lịch (guides) và trang chi tiết bài viết
-- Hoàn thiện navbar và footer dùng chung cho toàn bộ trang
+- Xây dựng trang quản trị (`admin`): quản lý danh sách phòng (thêm, sửa, xóa), xử lý đơn đặt phòng, quản lý thông tin khách hàng
+- Thêm chức năng theo dõi doanh thu và thống kê số liệu vào trang admin
+- Xây dựng trang cẩm nang du lịch (`guides`) và trang chi tiết bài viết
+- Kiểm tra lại toàn bộ các luồng: đặt phòng, thanh toán, xem lịch sử, quản trị
+- Sửa lỗi phát sinh sau khi test, hoàn thiện giao diện các trang còn lại
 
 ## Kết quả đạt được
 
-- Admin có thể thêm/sửa/xoá khách sạn trực tiếp trên giao diện
-- Quản lý coupon hoạt động đúng
-- Trang guides hiển thị danh sách bài viết và xem chi tiết
+- Admin quản lý phòng, đơn đặt phòng và khách hàng hoạt động đầy đủ
+- Luồng đặt phòng end-to-end hoàn chỉnh: trang chủ → xem phòng → đặt → thanh toán → xác nhận → lịch sử
+- Hệ thống hoạt động ổn định, dữ liệu lưu và hiển thị đúng trên giao diện
 
 ## Khó khăn gặp phải
 
-- Phân quyền admin/user chưa có authentication đầy đủ, tạm thời kiểm tra theo session
-- Upload ảnh khách sạn cần xử lý thêm
+- Phân quyền giữa tài khoản thường và admin cần kiểm tra cẩn thận
+- Một số trang lúc reload lại mất dữ liệu, phải xử lý lưu session đúng
 
-## Kế hoạch tuần tới
+## Tổng kết
 
-- Hoàn thiện UI/UX toàn bộ các trang
-- Test lại luồng đặt phòng end-to-end
-- Sửa các lỗi phát sinh, tối ưu hiệu năng
-- Chuẩn bị tài liệu báo cáo
+Hệ thống đặt phòng khách sạn đã hoàn thành đầy đủ các chức năng theo yêu cầu đề tài: đăng ký, đăng nhập, tìm kiếm phòng, đặt phòng, thanh toán, áp mã giảm giá, xem lịch sử và quản trị. Viết tài liệu báo cáo và chuẩn bị demo.

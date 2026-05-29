@@ -9,24 +9,26 @@
 
 ## Công việc đã làm
 
-- Xác định đề tài: hệ thống đặt phòng khách sạn
-- Phân tích yêu cầu chức năng cơ bản của hệ thống
-- Thiết kế sơ bộ cơ sở dữ liệu (các bảng chính: users, hotels, rooms, bookings)
-- Dựng cấu trúc thư mục dự án (frontend/backend tách biệt)
-- Tạo repository trên GitHub và push code ban đầu
+- Xác định đề tài: xây dựng hệ thống đặt phòng khách sạn trực tuyến
+- Tìm hiểu các hệ thống đặt phòng hiện có trên thị trường
+- Phân tích yêu cầu chức năng: phía khách hàng và phía quản trị viên
+- Xác định công nghệ sử dụng: HTML, CSS, JavaScript, Python Flask, PostgreSQL
+- Thiết kế sơ bộ cơ sở dữ liệu với các bảng: tài khoản, khách hàng, phòng, loại phòng, đặt phòng, hóa đơn, đánh giá, khuyến mãi
+- Dựng cấu trúc thư mục dự án theo mô hình MVC (frontend/backend tách biệt)
+- Tạo repository trên GitHub, cấu hình kết nối Flask với PostgreSQL
 
 ## Kết quả đạt được
 
-- Có bộ khung dự án hoàn chỉnh, phân chia rõ frontend và backend
-- Kết nối được Flask với PostgreSQL
-- Chạy thử server backend thành công ở port 5600
+- Bộ khung dự án hoàn chỉnh: `backend/` và `frontend/` tách biệt rõ ràng
+- Kết nối Flask với PostgreSQL thành công qua `db.py`
+- Server backend khởi động được tại port 5600
 
 ## Khó khăn gặp phải
 
-- Lúc đầu chưa quen cấu trúc Flask nên mất thời gian setup
-- Cấu hình CORS giữa frontend và backend mất một chút để chạy đúng
+- Cấu hình CORS giữa frontend và backend mất thời gian
+- Lúc đầu chưa biết tổ chức thư mục theo chuẩn nên phải sắp xếp lại
 
 ## Kế hoạch tuần tới
 
-- Xây dựng trang chủ (home)
-- Xây dựng trang danh sách khách sạn và chức năng tìm kiếm
+- Xây dựng trang đăng ký, đăng nhập người dùng
+- Xây dựng trang chủ hiển thị danh sách khách sạn

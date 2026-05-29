@@ -9,24 +9,24 @@
 
 ## Công việc đã làm
 
-- Xây dựng trang chi tiết khách sạn: ảnh, mô tả, tiện nghi, đánh giá
-- Xây dựng trang đặt phòng (hotel-checkout): chọn phòng, nhập thông tin khách
-- Tích hợp Flatpickr để chọn ngày nhận/trả phòng
-- Viết API backend: lấy chi tiết khách sạn, tạo đơn đặt phòng mới
+- Xây dựng trang chi tiết phòng (`hotel-detail`): hiển thị hình ảnh phòng, thông tin đầy đủ và đánh giá của khách hàng
+- Tích hợp Flatpickr để chọn ngày nhận phòng và trả phòng
+- Xây dựng trang đặt phòng (`hotel-checkout`): nhập thông tin khách, chọn số người lưu trú, xem tổng tiền theo số đêm
+- Viết API backend: lấy chi tiết phòng, lấy đánh giá, tạo đơn đặt phòng mới, cập nhật trạng thái phòng
 
 ## Kết quả đạt được
 
-- Luồng từ xem chi tiết → đặt phòng hoạt động liền mạch
-- Dữ liệu đặt phòng lưu đúng vào database
-- Tính tiền phòng theo số ngày ở tự động
+- Người dùng xem ảnh và đánh giá phòng trước khi đặt
+- Hệ thống tính tiền đúng theo số đêm ở (ngày trả - ngày nhận)
+- Thông tin đặt phòng lưu vào database, trạng thái phòng tự động cập nhật thành "Đã đặt"
 
 ## Khó khăn gặp phải
 
-- Tính số đêm giữa 2 ngày ban đầu tính sai do múi giờ
-- Validate dữ liệu form phía frontend mất thêm thời gian xử lý
+- Tính số đêm giữa 2 ngày ban đầu sai do lệch múi giờ, phải xử lý lại
+- Validate dữ liệu form trước khi gửi lên server mất thêm thời gian
 
 ## Kế hoạch tuần tới
 
 - Xây dựng trang xác nhận đặt phòng
-- Xây dựng tính năng áp dụng mã giảm giá
-- Xây dựng trang lịch sử đặt phòng
+- Xây dựng tính năng mã giảm giá (coupon)
+- Xây dựng trang lịch sử đặt phòng cho người dùng

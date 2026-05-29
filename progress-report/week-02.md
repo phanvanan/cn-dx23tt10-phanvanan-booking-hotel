@@ -9,23 +9,24 @@
 
 ## Công việc đã làm
 
-- Xây dựng trang chủ: hiển thị địa điểm nổi bật, danh sách khách sạn gợi ý
-- Làm thanh tìm kiếm (searchBar) dùng chung cho nhiều trang
-- Xây dựng trang danh sách khách sạn (hotel-list)
-- Viết API backend: lấy danh sách khách sạn, tìm kiếm theo địa điểm và ngày
+- Xây dựng trang chủ (`home`): hiển thị danh sách khách sạn nổi bật, thanh tìm kiếm theo địa điểm và ngày
+- Xây dựng trang đăng nhập và đăng ký tài khoản người dùng
+- Xây dựng trang danh sách khách sạn (`hotel-list`): hiển thị danh sách phòng, hỗ trợ lọc theo ngày nhận/trả phòng và số người
+- Xây dựng các thành phần dùng chung: navbar, footer, searchBar
+- Viết API backend: lấy danh sách phòng, xác thực đăng nhập/đăng ký
 
 ## Kết quả đạt được
 
-- Trang chủ hiển thị đúng dữ liệu từ database
-- Tìm kiếm khách sạn theo địa điểm hoạt động
-- Bộ lọc giá và hạng sao trên trang danh sách hoạt động đúng
+- Người dùng đăng ký và đăng nhập thành công, hệ thống xác thực tài khoản đúng
+- Trang chủ tải dữ liệu phòng từ database và hiển thị đúng
+- Tìm kiếm phòng trống theo ngày hoạt động, kết quả trả về đúng
 
 ## Khó khăn gặp phải
 
-- Xử lý query tìm kiếm có nhiều điều kiện lúc đầu bị sai kết quả
-- Căn chỉnh layout trang hotel-list mất khá nhiều thời gian
+- Xử lý kiểm tra phòng trống theo khoảng ngày lúc đầu bị sai logic
+- Căn layout trang danh sách mất khá nhiều thời gian
 
 ## Kế hoạch tuần tới
 
-- Xây dựng trang chi tiết khách sạn (hotel-detail)
+- Xây dựng trang chi tiết phòng khách sạn: hình ảnh, mô tả, đánh giá
 - Xây dựng luồng đặt phòng và thanh toán
