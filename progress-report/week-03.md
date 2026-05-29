@@ -1,3 +1,4 @@
+<!-- Báo cáo tuần 3: Trang chi tiết khách sạn, tích hợp Flatpickr và đặt phòng -->
 # Báo cáo tiến độ - Tuần 3
 
 **Họ tên:** Phan Văn Ân  
