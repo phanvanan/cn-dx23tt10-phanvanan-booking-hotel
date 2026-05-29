@@ -69,7 +69,7 @@ source/
 
 ### Yêu cầu hệ thống
 
-- Python 3.10+
+- Python 3.11
 - PostgreSQL đang chạy (local, port 5432)
 - Trình duyệt web hiện đại (Chrome, Firefox, Edge)
 
@@ -99,7 +99,7 @@ cd backend
 python app.py
 ```
 
-Backend chạy tại: `http://localhost:5000`
+Backend chạy tại: `http://localhost:5600`
 
 ### Bước 4 — Mở Frontend
 
@@ -109,7 +109,7 @@ Mở trực tiếp file trong trình duyệt:
 frontend/pages/home/index.html
 ```
 
-Hoặc dùng extension **Live Server** trong VS Code để chạy trên `http://127.0.0.1:5500`.
+Hoặc dùng extension **Live Server** trong VS Code để chạy trên `http://127.0.0.1:5600`.
 
 ---
 
