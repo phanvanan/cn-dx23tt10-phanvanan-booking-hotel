@@ -1,3 +1,4 @@
+# Database connection helper for PostgreSQL
 import psycopg2
 from psycopg2 import pool
 import logging
